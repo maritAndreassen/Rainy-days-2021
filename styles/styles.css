@@ -1,0 +1,118 @@
+@import "colors.scss";
+@import "searchField.css";
+
+@font-face {
+  font-family: "Segoe UI";
+  src: local("Segoe UI"),
+    url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2)
+      format("woff2"),
+    url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff)
+      format("woff"),
+    url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf)
+      format("truetype");
+  font-weight: 400;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  font-family: "Segoe UI", Open Sans, Verdana, sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  z-index: 12;
+  position: absolute;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+
+a.logo {
+  width: 140px;
+  align-self: flex-start;
+}
+
+.logo {
+  width: 100%;
+  line-height: 100px;
+  margin-left: 20px;
+}
+
+.wrapper-icons {
+  line-height: 100px;
+  font-size: x-large;
+  color: #0b3a40;
+  margin-right: 20px;
+}
+
+nav {
+  float: left;
+  width: 100%;
+  background-color: #0b3a40;
+}
+
+nav a {
+  text-decoration: none;
+  letter-spacing: 4px;
+  font-size: 1.25em;
+  color: white;
+  padding: 14px;
+}
+
+nav a:hover {
+  background-color: #ffd700;
+  color: #0b3a40;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+a {
+  flex: none;
+  color: #0b3a40;
+  padding: 5px;
+}
+
+a:hover {
+  color: #ffd700;
+}
+
+.main-picture {
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 150px;
+  background-color: #0b3a40;
+}
+
+footer i,
+h2,
+p {
+  color: white;
+}
+
+.footer-text {
+  width: 60%;
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+}

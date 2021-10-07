@@ -1,0 +1,55 @@
+@import "colors.scss";
+
+form {
+  background-color: #02595152;
+  width: 250px;
+  height: 32px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+input {
+  all: unset;
+  font: 1em "Open Sans", Tahoma, Verdana, sans-serif;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  padding: 6px 10px;
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 0.7;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+}
+
+#svg {
+  color: #fff;
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+  padding: 10px;
+}
+
+@media (min-width: 300px) and (max-width: 700px) {
+  #form1 {
+    display: none;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 3200px) {
+  #form1 {
+    display: flex;
+  }
+  #search-icon {
+    display: none;
+  }
+}
