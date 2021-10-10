@@ -107,17 +107,11 @@ a:hover {
   display: flex;
   position: relative;
   flex-wrap: wrap;
-  border: 1px solid black;
   margin: 20px;
 }
 
 .news-item img {
   width: 100%;
-}
-
-.news-item i {
-  font-size: x-large;
-  color: #0b3a40;
 }
 
 .text-field {
@@ -127,6 +121,11 @@ a:hover {
 
 .text-field button p {
   flex-flow: column;
+}
+
+.news-item i {
+  font-size: x-large;
+  color: #0b3a40;
 }
 
 .news-item p {
