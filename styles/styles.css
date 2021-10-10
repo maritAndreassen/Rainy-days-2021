@@ -175,7 +175,7 @@ footer a {
   font-size: x-large;
 }
 
-@media (min-width: 100px) and (max-width: 499px) {
+@media (min-width: 100px) and (max-width: 549px) {
   .news-section {
     flex-wrap: wrap;
   }
@@ -183,9 +183,17 @@ footer a {
   .news-item img {
     width: 100%;
   }
+
+  .news-item p {
+    margin-top: 14px;
+  }
+
+  .news-item a {
+    margin: 0;
+  }
 }
 
-@media (min-width: 500px) and (max-width: 699px) {
+@media (min-width: 550px) and (max-width: 699px) {
   .news-item img {
     width: 100%;
   }
