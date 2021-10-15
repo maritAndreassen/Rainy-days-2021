@@ -1,4 +1,4 @@
-@import "colors.scss";
+@import "colors.css";
 @import "searchField.css";
 
 @font-face {
@@ -50,27 +50,27 @@ a.logo {
 .wrapper-icons {
   line-height: 100px;
   font-size: x-large;
-  color: #0b3a40;
+  color: var(--main-green-03);
   margin-right: 20px;
 }
 
 nav {
   width: 100%;
   padding: 1px;
-  background-color: #0b3a40;
+  background-color: var(--main-green-03);
 }
 
 nav a {
   text-decoration: none;
   letter-spacing: 4px;
   font-size: 1.25em;
-  color: white;
+  color: var(--white);
   padding: 14px;
 }
 
 nav a:hover {
-  background-color: #ffd700;
-  color: #0b3a40;
+  background-color: var(--main-yellow);
+  color: var(--main-green-03);
 }
 
 ul {
@@ -80,12 +80,12 @@ ul {
 
 a {
   flex: none;
-  color: #0b3a40;
+  color: var(--main-green-03);
   padding: 5px;
 }
 
 a:hover {
-  color: #ffd700;
+  color: var(--main-yellow);
 }
 
 .main-picture {
@@ -126,7 +126,7 @@ a:hover {
 
 .news-item i {
   font-size: x-large;
-  color: #0b3a40;
+  color: var(--main-green-03);
 }
 
 .news-item p {
@@ -138,7 +138,7 @@ a:hover {
 }
 
 .news-item button {
-  border: 1px solid black;
+  border: 1px solid var(--black);
   border-radius: 8px;
   float: left;
   margin: 10px;
@@ -147,9 +147,9 @@ a:hover {
 }
 
 .news-item button:hover {
-  background-color: #ffd700;
-  color: #0b3a40;
-  border-color: #ffd700;
+  background-color: var(--main-yellow);
+  color: var(--main-green-03);
+  border-color: var(--main-yellow);
 }
 
 footer {
@@ -157,17 +157,17 @@ footer {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  background-color: #0b3a40;
+  background-color: var(--main-green-03);
 }
 
 footer a {
-  color: white;
+  color: var(--white);
 }
 
 .footer-text {
   width: 60%;
   margin-bottom: 20px;
-  color: white;
+  color: var(--white);
 }
 
 .contact-icons {
