@@ -1,4 +1,4 @@
-@import "colors.scss";
+@import "colors.css";
 
 form {
   background-color: #02595152;
@@ -13,14 +13,14 @@ form {
 input {
   all: unset;
   font: 1em "Open Sans", Tahoma, Verdana, sans-serif;
-  color: #fff;
+  color: var(--white);
   height: 100%;
   width: 100%;
   padding: 6px 10px;
 }
 
 ::placeholder {
-  color: #fff;
+  color: var(--white);
   opacity: 0.7;
 }
 
@@ -32,7 +32,7 @@ button {
 }
 
 #svg {
-  color: #fff;
+  color: var(--white);
   fill: currentColor;
   width: 24px;
   height: 24px;

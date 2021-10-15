@@ -1,0 +1,19 @@
+section .text-field button {
+  grid-area: view-button;
+}
+section .text-field p {
+  grid-area: price;
+}
+section .text-field a {
+  grid-area: heart-icon;
+}
+
+footer .text-field .contact-icons {
+  grid-area: contact-icons;
+}
+section .text-field .footer-text {
+  grid-area: footer-text;
+}
+section .text-field .some-icons {
+  grid-area: some-icons;
+}
