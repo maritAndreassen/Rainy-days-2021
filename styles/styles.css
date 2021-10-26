@@ -100,21 +100,19 @@ a:hover {
 }
 
 .page-seperator {
-  width: 90%;
-  height: 20px;
-  margin: 10px;
+  margin: 10px auto;
+  display: block;
 }
 
 .news-section {
   display: flex;
   justify-content: space-evenly;
+  margin: 20px;
 }
 
 .news-item {
-  display: flex;
-  position: relative;
-  flex-wrap: wrap;
-  margin: 20px;
+  margin: 5px;
+  width: 250px;
 }
 
 .news-item img {
@@ -131,6 +129,10 @@ a:hover {
 .news-item i {
   font-size: x-large;
   color: var(--main-green-03);
+}
+
+.news-item i:hover {
+  color: var(--main-yellow);
 }
 
 .news-item p {
@@ -163,7 +165,9 @@ footer {
   width: 100%;
   background: linear-gradient(var(--secondary-green), var(--main-green-03));
   display: grid;
-  grid-template-areas: "footer-text contact-icons some-icons";
+  grid-template-areas:
+    "footer-text footer-text"
+    "contact-icons some-icons";
 }
 
 footer a {
@@ -172,19 +176,17 @@ footer a {
 
 .footer-text {
   width: 60%;
-  margin-bottom: 20px;
+  margin: 0 20px;
   color: var(--white);
-  padding: 0 4rem;
-  text-align: center;
 }
 
 .contact-icons,
 .some-icons {
-  margin: 20px;
+  margin: 0 20px 20px;
   font-size: x-large;
 }
 
-@media (min-width: 100px) and (max-width: 549px) {
+@media (min-width: 100px) and (max-width: 619px) {
   .news-section {
     flex-wrap: wrap;
   }
@@ -202,7 +204,7 @@ footer a {
   }
 }
 
-@media (min-width: 550px) and (max-width: 699px) {
+@media (min-width: 620px) and (max-width: 699px) {
   .news-item img {
     width: 100%;
   }

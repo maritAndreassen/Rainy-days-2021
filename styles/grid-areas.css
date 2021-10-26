@@ -6,13 +6,14 @@ section .text-field p {
 }
 section .text-field a {
   grid-area: heart-icon;
+  justify-self: end;
 }
 
-footer .text-field .contact-icons {
-  grid-area: contact-icons;
-}
 section .text-field .footer-text {
   grid-area: footer-text;
+}
+footer .text-field .contact-icons {
+  grid-area: contact-icons;
 }
 section .text-field .some-icons {
   grid-area: some-icons;
