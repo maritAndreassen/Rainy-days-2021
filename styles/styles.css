@@ -24,6 +24,9 @@ body {
   font-family: "Segoe UI", Open Sans, Verdana, sans-serif;
 }
 
+main {
+}
+
 h2.news {
   text-align: center;
 }
@@ -32,15 +35,15 @@ header {
   width: 100%;
   background-size: cover;
   background-repeat: none;
-  position: fixed;
-  z-index: 1;
+  position: sticky;
+  top: 0;
 }
 
 .header-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--whitesmoke);
+  background-color: var(--white);
 }
 
 a.logo {
@@ -79,6 +82,11 @@ nav a:hover {
   color: var(--main-green-03);
 }
 
+#nav-a-active {
+  background-color: var(--main-yellow);
+  color: var(--main-green-03);
+}
+
 ul {
   display: flex;
   list-style-type: none;
@@ -96,12 +104,12 @@ a:hover {
 
 .main-picture {
   width: 100%;
-  margin-top: 10rem;
 }
 
 .page-seperator {
   margin: 10px auto;
   display: block;
+  width: 90%;
 }
 
 .news-section {
@@ -164,10 +172,8 @@ footer {
   justify-content: space-between;
   width: 100%;
   background: linear-gradient(var(--secondary-green), var(--main-green-03));
-  display: grid;
-  grid-template-areas:
-    "footer-text footer-text"
-    "contact-icons some-icons";
+  display: flex;
+  flex-wrap: wrap;
 }
 
 footer a {
@@ -180,8 +186,7 @@ footer a {
   color: var(--white);
 }
 
-.contact-icons,
-.some-icons {
+.contact-icons {
   margin: 0 20px 20px;
   font-size: x-large;
 }
