@@ -63,8 +63,11 @@ a.logo {
   margin-right: 20px;
 }
 
+#icon-active {
+  color: var(--main-yellow);
+}
+
 nav {
-  width: 100%;
   padding: 1px;
   background-color: var(--main-green-03);
 }
