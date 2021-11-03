@@ -109,10 +109,17 @@ a:hover {
   width: 100%;
 }
 
-.page-seperator {
-  margin: 10px auto;
+.center-img {
+  margin: 0 auto 10px auto;
   display: block;
+}
+
+.page-seperator {
   width: 90%;
+}
+
+.slogan {
+  width: 50%;
 }
 
 .inspiration-container {
@@ -124,7 +131,7 @@ a:hover {
 
 .inspiration-item {
   margin: 5px;
-  width: 250px;
+  width: 280px;
 }
 
 .inspiration-item img {
@@ -226,6 +233,10 @@ footer a {
 
   .news-item a {
     margin: 0;
+  }
+
+  .slogan {
+    width: 60%;
   }
 }
 
