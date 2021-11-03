@@ -1,0 +1,66 @@
+.news-item button {
+  border: 1px solid var(--black);
+  text-align: center;
+  border-radius: 8px;
+  float: left;
+  margin: 10px;
+  height: 30px;
+  padding: 0 5px;
+}
+
+.news-item button:hover {
+  background-color: var(--main-yellow);
+  color: var(--main-green-03);
+  border-color: var(--main-yellow);
+}
+
+.view-jacket-text-field button,
+.my-shopping-cart-container button,
+.checkout-container button {
+  background-color: var(--secondary-green);
+  color: var(--white);
+  text-align: center;
+  border-radius: 8px;
+  margin: 30px 0;
+  height: auto;
+  width: fit-content;
+  padding: 8px 30px;
+}
+
+.view-jacket-text-field button:hover,
+.my-shopping-cart-container button:hover {
+  background-color: var(--main-yellow);
+  color: var(--secondary-green);
+}
+
+.view-jacket-text-field button:active,
+.my-shopping-cart-container button:active,
+.checkout-container button:active {
+  background-color: var(--main-yellow);
+  color: var(--secondary-green);
+  border: solid 2px var(--main-green-03);
+  padding: 6px 28px;
+}
+
+.view-jacket-text-field button:disabled,
+.my-shopping-cart-container button:disabled,
+.checkout-container button:disabled {
+  background-color: var(--light-grey);
+  color: var(--white);
+}
+
+.my-shopping-cart-container button,
+.checkout-container button {
+  margin: 30px 0 50px;
+}
+
+.center-button {
+  text-align: center;
+}
+
+.checkout-container button:hover {
+  border: solid 2px black;
+  background-color: var(--success-green);
+  color: black;
+  padding: 6px 28px;
+}
