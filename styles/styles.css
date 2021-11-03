@@ -188,22 +188,6 @@ a:hover {
 .news-item a {
   margin: 0 0 10px 10px;
 }
-/*
-.news-item button {
-  border: 1px solid var(--black);
-  text-align: center;
-  border-radius: 8px;
-  float: left;
-  margin: 10px;
-  height: 30px;
-  padding: 0 5px;
-}
-
-.news-item button:hover {
-  background-color: var(--main-yellow);
-  color: var(--main-green-03);
-  border-color: var(--main-yellow);
-} */
 
 /*Styling woman.html and men.html */
 
