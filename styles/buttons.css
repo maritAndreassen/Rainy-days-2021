@@ -1,11 +1,22 @@
+button {
+  all: unset;
+  cursor: pointer;
+  text-align: center;
+  width: fit-content;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.center-button {
+  text-align: center;
+}
+
 .news-item button {
   border: 1px solid var(--black);
-  text-align: center;
-  border-radius: 8px;
   float: left;
   margin: 10px;
   height: 30px;
-  padding: 0 5px;
+  padding: 0 10px;
 }
 
 .news-item button:hover {
@@ -19,11 +30,8 @@
 .checkout-container button {
   background-color: var(--secondary-green);
   color: var(--white);
-  text-align: center;
-  border-radius: 8px;
   margin: 30px 0;
   height: auto;
-  width: fit-content;
   padding: 8px 30px;
 }
 
@@ -31,6 +39,13 @@
 .my-shopping-cart-container button:hover {
   background-color: var(--main-yellow);
   color: var(--secondary-green);
+}
+
+.checkout-container button:hover {
+  border: solid 2px black;
+  background-color: var(--main-blue-01);
+  color: var(--white);
+  padding: 6px 28px;
 }
 
 .view-jacket-text-field button:active,
@@ -52,15 +67,4 @@
 .my-shopping-cart-container button,
 .checkout-container button {
   margin: 30px 0 50px;
-}
-
-.center-button {
-  text-align: center;
-}
-
-.checkout-container button:hover {
-  border: solid 2px black;
-  background-color: var(--success-green);
-  color: black;
-  padding: 6px 28px;
 }
