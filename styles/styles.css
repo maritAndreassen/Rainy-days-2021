@@ -47,7 +47,7 @@ header {
   width: 100%;
   background-size: cover;
   background-repeat: none;
-  position: sticky;
+  position: relative;
   top: 0;
 }
 
@@ -190,7 +190,7 @@ a:hover {
 
 .view-jacket-img {
   margin: 5px;
-  width: 350px;
+  width: 40rem;
 }
 
 .view-jacket-text-field {
@@ -362,5 +362,25 @@ footer a {
   .checkout-container {
     top: 60%;
     padding: 8rem 0 10rem 0;
+  }
+}
+
+@media (min-width: 620px) and (max-width: 1264px) {
+  .view-jacket-img {
+    width: 30rem;
+  }
+}
+
+@media (min-width: 1265px) and (max-width: 2000px) {
+  .view-jacket-img {
+    width: 50rem;
+  }
+
+  .page-seperator {
+    width: 70%;
+  }
+
+  .slogan {
+    width: 40%;
   }
 }
