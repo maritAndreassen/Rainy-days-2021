@@ -74,6 +74,7 @@ a.logo {
   margin-right: 20px;
 }
 
+#icon-heart-active,
 #icon-active {
   color: var(--main-yellow);
 }
@@ -369,7 +370,7 @@ footer a {
   }
 }
 
-@media (min-width: 1265px) and (max-width: 2000px) {
+@media (min-width: 1265px) and (max-width: 4000px) {
   .view-jacket-img {
     width: 50rem;
   }
