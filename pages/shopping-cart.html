@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../styles/styles.css" rel="stylesheet" />
+    <link href="../styles/checkoutModal.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/90297555d7.js" crossorigin="anonymous"></script>
     <!-- Hotjar Tracking Code for https://festive-liskov-2c89d5.netlify.app/ -->
     <script>
@@ -86,7 +87,16 @@
           <div class="price-item"><b>Total </b><b>110$</b></div>
         </section>
         <div class="center-button">
-          <button onclick="window.location.href='../pages/checkout.html'">CHECKOUT</button>
+          <button class="open-modal" data-open="checkoutModal">CHECKOUT</button>
+          <div class="modal" id="checkoutModal">
+            <section class="modal-dialog">
+              <h2 class="modal-header">Checkout success</h2>
+              <button onclick="window.location.href='../index.html'" class="goToPayment">
+                Go to payment
+              </button>
+              <button class="close-modal" data-close>Cancel</button>
+            </section>
+          </div>
         </div>
       </section>
     </main>
@@ -107,5 +117,6 @@
         <a aria-label="Facebook" href="#"><i class="fab fa-facebook"></i></a>
       </section>
     </footer>
+    <script src="../js/checkout.js"></script>
   </body>
 </html>
