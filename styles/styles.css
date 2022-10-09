@@ -6,10 +6,8 @@
 @font-face {
   font-family: "Segoe UI";
   src: local("Segoe UI"),
-    url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2)
-      format("woff2"),
-    url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff)
-      format("woff"),
+    url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"),
+    url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"),
     url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf)
       format("truetype");
   font-weight: 400;
@@ -146,6 +144,7 @@ a:hover {
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: 20px;
+  padding: 0;
 }
 
 .news-item {
@@ -175,6 +174,7 @@ a:hover {
 
 .news-item a {
   margin: 0 0 10px 10px;
+  text-align: end;
 }
 
 /*Styling woman.html and men.html */
@@ -382,4 +382,57 @@ footer a {
   .slogan {
     width: 40%;
   }
+}
+/* Styling contact form and error messages*/
+
+.form-error {
+  display: none;
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 2px;
+}
+
+.submit-button {
+  margin: 2rem 0;
+}
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  backdrop-filter: blur(10px);
+  flex-direction: column;
+  font-size: 1rem;
+}
+
+.form-container {
+  border: 3px solid var(--whitesmoke);
+  background-color: var(--whitesmoke);
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form {
+  flex-direction: column;
+  height: fit-content;
+  width: fit-content;
+  background-color: var(--whitesmoke);
+}
+
+.contact-form input {
+  border: 1px solid black;
+  color: black;
+}
+
+.open-contact-form {
+  color: white;
 }

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../styles/styles.css" rel="stylesheet" />
+    <link href="../styles/modal.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/90297555d7.js" crossorigin="anonymous"></script>
     <!-- Hotjar Tracking Code for https://festive-liskov-2c89d5.netlify.app/ -->
     <script>
@@ -60,89 +61,142 @@
       </nav>
     </header>
     <main>
-      <section class="news-container jacket-selection">
-        <section class="news-item">
+      <ul class="news-container jacket-selection">
+        <li class="news-item">
           <img src="../images/jackets/yellow-jacket-w.jpg" alt="Yellow woman jacket" />
           <div class="text-field">
-            <button onclick="window.location.href='../pages/view-jacket.html'">VIEW</button>
-            <a aria-label="heart icon for favourites" href="./favourites.html">
+            <button
+              class="secondaryButton"
+              onclick="window.location.href='../pages/view-jacket.html'"
+            >
+              VIEW
+            </button>
+            <a class="open-modal" data-open="addFavourite" aria-label="heart icon for favourites">
               <i class="far fa-heart"></i
             ></a>
+            <div class="modal" id="addFavourite">
+              <section class="modal-dialog">
+                <i class="fas fa-heart" aria-hidden></i>
+                <h2>Chosen jacket added to favourites</h2>
+                <button class="primaryButton" data-close>Ok</button>
+                <button
+                  class="primaryButton"
+                  onclick="window.location.href='../pages/favourites.html'"
+                >
+                  Go to favourites
+                </button>
+              </section>
+            </div>
             <p>Price 100.00</p>
           </div>
-        </section>
-        <section class="news-item">
+        </li>
+        <li class="news-item">
           <img src="../images/jackets/blue-jacket-w.jpg" alt="Blue woman jacket" />
           <div class="text-field">
-            <button onclick="window.location.href='../pages/view-jacket.html'">VIEW</button>
+            <button
+              class="secondaryButton"
+              onclick="window.location.href='../pages/view-jacket.html'"
+            >
+              VIEW
+            </button>
             <a aria-label="heart icon for favourites" href="./favourites.html"
               ><i class="far fa-heart"></i
             ></a>
             <p>Price 100.00</p>
           </div>
-        </section>
-        <section class="news-item">
+        </li>
+        <li class="news-item">
           <img src="../images/jackets/Red-jacket-w.jpg" alt="Red womens jacket" />
           <div class="text-field">
-            <button onclick="window.location.href='../pages/view-jacket.html'">VIEW</button>
+            <button
+              class="secondaryButton"
+              onclick="window.location.href='../pages/view-jacket.html'"
+            >
+              VIEW
+            </button>
             <a aria-label="heart icon for favourites" href="./favourites.html"
               ><i class="far fa-heart"></i
             ></a>
             <p>Price 100.00</p>
           </div>
-        </section>
-        <section class="news-item">
+        </li>
+        <li class="news-item">
           <img src="../images/jackets/orange-jacket-w.jpg" alt="Orange woman jacket" />
           <div class="text-field">
-            <button onclick="window.location.href='../pages/view-jacket.html'">VIEW</button>
+            <button
+              class="secondaryButton"
+              onclick="window.location.href='../pages/view-jacket.html'"
+            >
+              VIEW
+            </button>
             <a aria-label="heart icon for favourites" href="./favourites.html"
               ><i class="far fa-heart"></i
             ></a>
             <p>Price 100.00</p>
           </div>
-        </section>
-        <section class="news-item">
+        </li>
+        <li class="news-item">
           <img src="../images/jackets/dark-red-jacket-w.jpg" alt="Dark red woman jacket" />
           <div class="text-field">
-            <button onclick="window.location.href='../pages/view-jacket.html'">VIEW</button>
+            <button
+              class="secondaryButton"
+              onclick="window.location.href='../pages/view-jacket.html'"
+            >
+              VIEW
+            </button>
             <a aria-label="heart icon for favourites" href="./favourites.html">
               <i class="far fa-heart"></i
             ></a>
             <!--<a href="#"> <i class="far fa-heart"></i></a>-->
             <p>Price 100.00</p>
           </div>
-        </section>
-        <section class="news-item">
+        </li>
+        <li class="news-item">
           <img src="../images/jackets/green-yellow-jacket-w.jpg" alt="Green yellow woman jacket" />
           <div class="text-field">
-            <button onclick="window.location.href='../pages/view-jacket.html'">VIEW</button>
+            <button
+              class="secondaryButton"
+              onclick="window.location.href='../pages/view-jacket.html'"
+            >
+              VIEW
+            </button>
             <a aria-label="heart icon for favourites" href="./favourites.html"
               ><i class="far fa-heart"></i
             ></a>
             <p>Price 100.00</p>
           </div>
-        </section>
-        <section class="news-item">
+        </li>
+        <li class="news-item">
           <img src="../images/jackets/blue-dark-jacket-w.jpg" alt="Dark blue womens jacket" />
           <div class="text-field">
-            <button onclick="window.location.href='../pages/view-jacket.html'">VIEW</button>
+            <button
+              class="secondaryButton"
+              onclick="window.location.href='../pages/view-jacket.html'"
+            >
+              VIEW
+            </button>
             <a aria-label="heart icon for favourites" href="./favourites.html"
               ><i class="far fa-heart"></i
             ></a>
             <p>Price 100.00</p>
           </div>
-        </section>
-        <section class="news-item">
+        </li>
+        <li class="news-item">
           <img src="../images/jackets/pink-jacket-w.jpg" alt="Pink orange woman jacket" />
           <div class="text-field">
-            <button onclick="window.location.href='../pages/view-jacket.html'">VIEW</button>
+            <button
+              class="secondaryButton"
+              onclick="window.location.href='../pages/view-jacket.html'"
+            >
+              VIEW
+            </button>
             <a aria-label="heart icon for favourites" href="./favourites.html"
               ><i class="far fa-heart"></i
             ></a>
             <p>Price 100.00</p>
           </div>
-        </section>
-      </section>
+        </li>
+      </ul>
       <img
         class="center-img page-seperator"
         src="../images/page-seperator-web.png"
@@ -190,5 +244,6 @@
         <a aria-label="Facebook" href="#"><i class="fab fa-facebook"></i></a>
       </section>
     </footer>
+    <script src="../js/modal.js"></script>
   </body>
 </html>

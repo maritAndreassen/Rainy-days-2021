@@ -60,15 +60,13 @@
       </nav>
     </header>
     <main>
-      <section class="main-background">
-        <picture>
-          <img
-            src="images/main-picture-web.png"
-            alt="A girl eating her lunch on the mountain, with a view"
-            class="main-picture"
-          />
-        </picture>
-      </section>
+      <picture class="main-background">
+        <img
+          src="images/main-picture-web.png"
+          alt="A girl eating her lunch on the mountain, with a view"
+          class="main-picture"
+        />
+      </picture>
       <img
         class="center-img page-seperator"
         src="images/page-seperator-web.png"
@@ -76,11 +74,12 @@
         aria-hidden="true"
       />
       <h2 class="news">NEWS</h2>
-      <section class="news-container">
-        <section class="news-item">
+      <ul class="news-container">
+        <li class="news-item">
           <img src="images/jackets/yellow-jacket-m.jpg" alt="Yellow mens jacket" />
           <div class="text-field">
             <button
+              class="secondaryButton"
               onclick="window.location.href='./pages/view-jacket.html'
             "
             >
@@ -92,11 +91,12 @@
             <!--<a href="#"> <i class="far fa-heart"></i></a>-->
             <p>Price 100.00</p>
           </div>
-        </section>
-        <section class="news-item">
+        </li>
+        <li class="news-item">
           <img src="images/jackets/Blue-jacket-m.jpg" alt="Blue mens jacket" />
           <div class="text-field">
             <button
+              class="secondaryButton"
               onclick="window.location.href='./pages/view-jacket.html'
             "
             >
@@ -107,11 +107,12 @@
             ></a>
             <p>Price 100.00</p>
           </div>
-        </section>
-        <section class="news-item">
+        </li>
+        <li class="news-item">
           <img src="images/jackets/Red-jacket-w.jpg" alt="Red womens jacket" />
           <div class="text-field">
             <button
+              class="secondaryButton"
               onclick="window.location.href='./pages/view-jacket.html'
             "
             >
@@ -122,11 +123,12 @@
             ></a>
             <p>Price 100.00</p>
           </div>
-        </section>
-        <section class="news-item">
+        </li>
+        <li class="news-item">
           <img src="images/jackets/Green-jacket-m.jpg" alt="Green mens jacket" />
           <div class="text-field">
             <button
+              class="secondaryButton"
               onclick="window.location.href='./pages/view-jacket.html'
             "
             >
@@ -137,8 +139,8 @@
             ></a>
             <p>Price 100.00</p>
           </div>
-        </section>
-      </section>
+        </li>
+      </ul>
     </main>
     <footer>
       <div class="footer-text">
@@ -150,12 +152,50 @@
         </p>
       </div>
       <section class="contact-icons">
-        <!--This should be buttons eventually-->
-        <a aria-label="email" href="#"><i class="fas fa-envelope"></i></a>
+        <button class="open-contact-form open-modal" onclick="openForm()" aria-label="email">
+          <i class="fas fa-envelope"></i>
+        </button>
+        <div class="container" id="contactForm">
+          <section class="form-container">
+            <h2>Contact form</h2>
+            <form class="contact-form">
+              <div>
+                <label for="name"
+                  >Name:
+                  <input type="text" id="name" />
+                </label>
+                <div class="form-error" id="nameError">
+                  Name is required, please enter your name.
+                </div>
+              </div>
+              <div>
+                <label for="subject"
+                  >Subject:
+                  <input type="text" id="subject" />
+                </label>
+                <div class="form-error" id="subjectError">
+                  Must have a value with a minimum length of 10
+                </div>
+              </div>
+              <div>
+                <label for="email"
+                  >E-mail:
+                  <input type="text" id="email" />
+                </label>
+                <div class="form-error" id="emailError">Please insert a valid e-mail addresse</div>
+              </div>
+              <button class="primaryButton" type="submit" value="Submit">Submit</button>
+              <button class="secondaryButton" onclick="location.href='/index.html'">
+                Back to homepage
+              </button>
+            </form>
+          </section>
+        </div>
         <a aria-label="tel" href="#"><i class="fas fa-phone"></i></a>
         <a aria-label="Instagram" href="#"><i class="fab fa-instagram"></i></a>
         <a aria-label="Facebook" href="#"><i class="fab fa-facebook"></i></a>
       </section>
     </footer>
+    <script src="./js/contact-form.js"></script>
   </body>
 </html>

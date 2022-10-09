@@ -1,15 +1,21 @@
-const openCheckoutModal = document.querySelectorAll("[data-open]");
-const closeCheckoutModal = document.querySelectorAll("[data-close]");
+const openModal = document.querySelectorAll("[data-open]");
+const closeModal = document.querySelectorAll("[data-close]");
 const isVisible = "is-visible";
 
-for (const el of openCheckoutModal) {
+for (const el of openModal) {
   el.addEventListener("click", function () {
     const modalId = this.dataset.open;
     document.getElementById(modalId).classList.add(isVisible);
   });
 }
 
-for (const el of closeCheckoutModal) {
+for (const el of closeModal) {
+  el.addEventListener("click", function () {
+    this.parentElement.parentElement.classList.remove(isVisible);
+  });
+}
+
+for (const el of closeModal) {
   el.addEventListener("click", function () {
     this.parentElement.parentElement.classList.remove(isVisible);
   });
