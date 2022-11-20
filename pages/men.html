@@ -7,22 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../styles/styles.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/90297555d7.js" crossorigin="anonymous"></script>
-    <!-- Hotjar Tracking Code for https://festive-liskov-2c89d5.netlify.app/ -->
-    <script>
-      (function (h, o, t, j, a, r) {
-        h.hj =
-          h.hj ||
-          function () {
-            (h.hj.q = h.hj.q || []).push(arguments);
-          };
-        h._hjSettings = { hjid: 3128820, hjsv: 6 };
-        a = o.getElementsByTagName("head")[0];
-        r = o.createElement("script");
-        r.async = 1;
-        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-        a.appendChild(r);
-      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-    </script>
   </head>
   <body>
     <header>
@@ -60,86 +44,8 @@
     </header>
     <main>
       <ul class="news-container jacket-selection">
-        <li class="news-item">
-          <img src="../images/jackets/yellow-jacket-m.jpg" alt="Yellow men jacket" />
-          <div class="text-field">
-            <button class="secondaryButton"onclick="window.location.href='../pages/view-jacket.html'">VIEW</button>
-            <a aria-label="heart icon for favourites" href="./favourites.html">
-              <i class="far fa-heart"></i
-            ></a>
-            <p>Price 100.00</p>
-          </div>
-        </li>
-        <li class="news-item">
-          <img src="../images/jackets/yellow-green-jacket-m.jpg" alt="Yellow green men jacket" />
-          <div class="text-field">
-            <button class="secondaryButton"onclick="window.location.href='../pages/view-jacket.html'">VIEW</button>
-            <a aria-label="heart icon for favourites" href="./favourites.html"
-              ><i class="far fa-heart"></i
-            ></a>
-            <p>Price 100.00</p>
-          </div>
-        </li>
-        <li class="news-item">
-          <img src="../images/jackets/orange-jacket-m.jpg" alt="Orange men jacket" />
-          <div class="text-field">
-            <button class="secondaryButton"onclick="window.location.href='../pages/view-jacket.html'">VIEW</button>
-            <a aria-label="heart icon for favourites" href="./favourites.html"
-              ><i class="far fa-heart"></i
-            ></a>
-            <p>Price 100.00</p>
-          </div>
-        </li>
-        <li class="news-item">
-          <img src="../images/jackets/Green-jacket-m.jpg" alt="Green men jacket" />
-          <div class="text-field">
-            <button class="secondaryButton"onclick="window.location.href='../pages/view-jacket.html'">VIEW</button>
-            <a aria-label="heart icon for favourites" href="./favourites.html"
-              ><i class="far fa-heart"></i
-            ></a>
-            <p>Price 100.00</p>
-          </div>
-        </li>
-        <li class="news-item">
-          <img src="../images/jackets/blue-light-jacket-m.jpg" alt="Light blue men jacket" />
-          <div class="text-field">
-            <button class="secondaryButton"onclick="window.location.href='../pages/view-jacket.html'">VIEW</button>
-            <a aria-label="heart icon for favourites" href="./favourites.html">
-              <i class="far fa-heart"></i
-            ></a>
-            <p>Price 100.00</p>
-          </div>
-        </li>
-        <li class="news-item">
-          <img src="../images/jackets/blue-jacket-m.jpg" alt="Blue men jacket" />
-          <div class="text-field">
-            <buttonclass="secondaryButton" onclick="window.location.href='../pages/view-jacket.html'">VIEW</button>
-            <a aria-label="heart icon for favourites" href="./favourites.html"
-              ><i class="far fa-heart"></i
-            ></a>
-            <p>Price 100.00</p>
-          </div>
-        </li>
-        <li class="news-item">
-          <img src="../images/jackets/blue-dark-jacket-w.jpg" alt="Dark blue womens jacket" />
-          <div class="text-field">
-            <button class="secondaryButton"onclick="window.location.href='../pages/view-jacket.html'">VIEW</button>
-            <a aria-label="heart icon for favourites" href="./favourites.html"
-              ><i class="far fa-heart"></i
-            ></a>
-            <p>Price 100.00</p>
-          </div>
-        </li>
-        <li class="news-item">
-          <img src="../images/jackets/red-jacket-m.jpg" alt="Red men jacket" />
-          <div class="text-field">
-            <button class="secondaryButton"onclick="window.location.href='../pages/view-jacket.html'">VIEW</button>
-            <a aria-label="heart icon for favourites" href="./favourites.html"
-              ><i class="far fa-heart"></i
-            ></a>
-            <p>Price 100.00</p>
-          </div>
-        </li>
+        <div class="products"></div>
+        <script src="./../js/getMenProduct.js"></script>
       </ul>
       <img
         class="center-img page-seperator"
