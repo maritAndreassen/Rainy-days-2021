@@ -13,12 +13,10 @@ async function getProducts(url) {
   }
 }
 
-function getProductDetails() {
+async function getProductDetails() {
   const id = window.location.href.split("=")[1];
-  console.log(id);
   const detailProductUrl = `${baseUrl}/${id}`;
-  console.log(detailProductUrl);
-  getProducts(detailProductUrl, "Woman", createDetailHTML);
+  await getProducts(detailProductUrl, "Woman", createDetailHTML);
 }
 
 getProductDetails();
